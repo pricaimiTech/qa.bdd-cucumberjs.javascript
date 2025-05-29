@@ -42,13 +42,19 @@ Esta abordagem garante cobertura eficiente com o mínimo de casos de teste neces
 
 #### Funcionalidades Testadas
 
-Cenários com Exemplos
+```
+  Esquema do Cenário: Verificar liberação do consumo de bebida alcoólica
+    Dado que possuo <idade> anos de idade
+    Quando verifico se ela pode consumir bebida alcoólica
+    Então o sistema '<resultado>' o consumo de bebida alcoólica
 
-| Idade | Resultado | Descrição       |
-|:-----:|:---------:|:----------------|
-| 16    | `false`   | Menor de idade  |
-| 17    | `true `   | Menor de idade  |
-| 18    | `true`    | Maior de idade  |
+    Exemplos:
+      | idade | resultado   |
+      |    16 | não permite |
+      |    17 | não permite |
+      |    18 | permite     |
+      |    19 | permite     |
+```
 
 
 ### 🚀 Configuração e Execução
@@ -99,9 +105,4 @@ Executar todos os testes BDD
 ```bash
 npm test
 ``` 
-
-Executar cenários específicos
-```
-npx cucumber-js features/pessoa.feature
-```
 
