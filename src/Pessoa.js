@@ -4,17 +4,24 @@
  */
 class Pessoa {
 
+  /**
+   * @description Construtor da classe Pessoa
+   * @param {number|null} idade - Idade da pessoa (opcional)
+   */
   constructor(idade = null){
-    this.idade = idade
-    this.IDADE_MINIMO = 18
+    this.idade = idade;
+    /**
+     * @type {number}
+     * @description Idade mínima para consumo de bebida alcoólica
+     */
+    this.IDADE_MINIMO = 18;
   }
   
   /**
-   * 
-   * @param {*} idade 
-   * @returns {boolean} Retorna true se a idade for maior ou igual a 17, caso contrário retorna false.
+   * @description Método para verificar se a pessoa é maior de idade para consumo de bebida alcoólica.
+   * @param {number} idade - Idade a ser verificada
+   * @returns {boolean} Retorna true se a idade for maior ou igual à idade mínima configurada, caso contrário retorna false.
    * @throws {Error} Lança um erro se a idade não for um número inteiro positivo.
-   * @description Método para verificar se a pessoa é maior de idade (17 anos ou mais).
    */
   ehMaiorDeIdade(idade) {
     if (idade === null) {
@@ -29,4 +36,4 @@ class Pessoa {
   }
 }
 
-module.exports = Pessoa
+module.exports = Pessoa;

@@ -29,26 +29,32 @@ Com isso, foram definidos os seguintes requisitos funcionais:
 **Por que esta técnica?**
 
 1. **Partição de Equivalência**: Dividimos os dados de entrada em classes equivalentes baseados na idade de corte se pode ou não consumir álcool
-   - Classe 1: Idades = 17 (pode consumir álcool)
+   - Classe 1: Idades = 17 (não consumir álcool)
    - Classe 2: Idades > 17 (pode consumir álcool) 
    - Classe 3: Idades < 17 (não pode consumir álcool)
 
 2. **Análise de Valor Limite**: Testamos os valores nos limites das partições apartir da idade de corte de 17 anos.
     - 16 anos (abaixo da idade permitida)
-    - 17 anos (na idade permitida)
+    - 17 anos (abaixo da idade permitida)
     - 18 anos (acima da idade permitida)
 
 Esta abordagem garante cobertura eficiente com o mínimo de casos de teste necessários.
 
 #### Funcionalidades Testadas
 
-Cenários com Exemplos
+```
+  Esquema do Cenário: Verificar liberação do consumo de bebida alcoólica
+    Dado que possuo <idade> anos de idade
+    Quando verifico se ela pode consumir bebida alcoólica
+    Então o sistema '<resultado>' o consumo de bebida alcoólica
 
-| Idade | Resultado | Descrição       |
-|:-----:|:---------:|:----------------|
-| 16    | `false`   | Menor de idade  |
-| 17    | `true `   | Menor de idade  |
-| 18    | `true`    | Maior de idade  |
+    Exemplos:
+      | idade | resultado   |
+      |    16 | não permite |
+      |    17 | não permite |
+      |    18 | permite     |
+      |    19 | permite     |
+```
 
 
 ### 🚀 Configuração e Execução
@@ -99,9 +105,4 @@ Executar todos os testes BDD
 ```bash
 npm test
 ``` 
-
-Executar cenários específicos
-```
-npx cucumber-js features/pessoa.feature
-```
 
