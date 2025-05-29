@@ -5,26 +5,12 @@ Este projeto demonstra a implementação de Behavior-Driven Development (BDD) ut
 ## Referência do desafio 
 [repositório qa.desafio-tecnico-teorico.javascript](https://github.com/qajonatasmartins/qa.desafio-tecnico-teorico.javascript)
 
-## Respostas Teóricas sobre BDD 
-
-Behavior-Driven Development (BDD) é uma metodologia de desenvolvimento que estende o TDD (Test-Driven Development), focando na colaboração entre desenvolvedores, testadores e stakeholders de negócio.
-Características Principais:
-
-🗣️ Linguagem Ubíqua: Utiliza Gherkin, compreensível por pessoas técnicas e não-técnicas
-🎭 Foco no Comportamento: Descreve o que o sistema deve fazer, não como
-🤝 Colaboração: Promove conversas entre Product Owner, desenvolvedores e QA
-📚 Documentação Viva: Os cenários servem como documentação executável
-
-Como Aplicar BDD Corretamente:
-
-🔍 Descoberta: Conversas colaborativas para entender requisitos
-✍️ Formulação: Escrita de cenários em Gherkin de forma declarativa
-⚙️ Automação: Implementação dos testes automatizados
-▶️ Execução: Validação contínua dos comportamentos
 
 ## Desafio 
 
 > Com base no vídeo BDD não é automação de teste de uma das grandes referências da nossa área de qualidade 'Elias Nogueira', explique com suas palavras o que é o BDD e como aplica-ló da maneira correta no ciclo de desenvolvimento de software?
+
+BDD é uma metodologia que estende o TDD (Test-Driven Development), focada na colaboração entre os membros do time (desenvolvedores, testadores e stakeholders de negócio), visando utilizar uma linguagem padrão de escrita (Gherkin) para evitar ambiguidades na documentação, sendo que a mesma serve como documentação executável através da automação de testes, além de promover interação ativa e constante entre os membros do time para discovery e entendimento dos requisitos. 
 
 
 ### 🎯 Requisitos Funcionais
