@@ -75,16 +75,13 @@ Esta abordagem garante cobertura eficiente com o mínimo de casos de teste neces
 qa.bdd-cucumberjs.javascript/
 ├── 📁 .github/
 │   └── 📁 workflows/
-│       └── 📄 ci.yml
+│       └── 📄 main.yml
 ├── 📁 features/
 │   ├── 📄 pessoa.feature
 │   └── 📁 step_definitions/
 │       └── 📄 pessoa_steps.js
 ├── 📁 src/
 │   └── 📄 Pessoa.js
-├── 📁 support/
-│   └── 📄 world.js
-├── 📁 reports/
 ├── 📄 package.json
 ├── 📄 cucumber.js
 └── 📄 README.md
