@@ -1,4 +1,5 @@
 # QA BDD Cucumber.js JavaScript
+[![BDD Cucumber CI](https://github.com/pricaimiTech/qa.bdd-cucumberjs.javascript/actions/workflows/main.yml/badge.svg)](https://github.com/pricaimiTech/qa.bdd-cucumberjs.javascript/actions/workflows/main.yml)
 
 Este projeto demonstra a implementação de Behavior-Driven Development (BDD) utilizando Cucumber.js em JavaScript para validação de idade para consumo de bebida alcoólica. O objetivo é mostrar como aplicar BDD de forma correta, criando uma ponte entre requisitos de negócio e implementação técnica.
 
